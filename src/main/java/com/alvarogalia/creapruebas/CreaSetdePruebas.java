@@ -38,7 +38,7 @@ public class CreaSetdePruebas {
         }
         Image fondo = Toolkit.getDefaultToolkit().getImage("patente.png");
 
-        int limit = 500;
+        int limit = 1800;
         int contador = 0;
         int width = 360;
         int height = 130;
@@ -120,12 +120,12 @@ public class CreaSetdePruebas {
 
             graphics2d.dispose();
 
-            BoxBlurFilter filter = new BoxBlurFilter();
-            filter.setHRadius(1);
-            filter.setVRadius(2);
-            filter.setIterations(1);
-            filter.setRadius(2);
-            image = filter.filter(image, image);
+            //BoxBlurFilter filter = new BoxBlurFilter();
+            //filter.setHRadius(1);
+            //filter.setVRadius(2);
+            //filter.setIterations(1);
+            //filter.setRadius(2);
+            //image = filter.filter(image, image);
 
             try {
                 File f = new File("patentes/clplate" + String.format("%03d", contador) + ".jpg");
